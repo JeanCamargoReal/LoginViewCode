@@ -34,11 +34,19 @@ class LoginScreen: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        self.configBackground()
+        self.configSuperView()
+        self.setUpConstraints()
+    }
+    
+    private func configBackground() {
         self.backgroundColor = UIColor(red: 24/255, green: 115/255, blue: 104/255, alpha: 1.0)
+        
+    }
+    
+    private func configSuperView() {
         self.addSubview(self.loginLabel)
         self.addSubview(self.logoAppImageView)
-        
-        self.setUpConstraints()
     }
     
     required init?(coder: NSCoder) {
