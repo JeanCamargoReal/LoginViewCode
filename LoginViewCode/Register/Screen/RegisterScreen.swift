@@ -44,7 +44,7 @@ class RegisterScreen: UIView {
         tf.autocorrectionType = .no
         tf.backgroundColor = .white
         tf.borderStyle = .roundedRect
-        tf.keyboardType = .emailAddress
+        tf.keyboardType = .default
         tf.placeholder = "Digite sua senha"
         tf.isSecureTextEntry = true
         tf.font = UIFont.systemFont(ofSize: 14)
@@ -84,6 +84,11 @@ class RegisterScreen: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    public func configTextFieldDelegate(delegate: UITextFieldDelegate) {
+        self.emailTextField.delegate = delegate
+        self.passwordTextField.delegate = delegate
     }
     
     private func setUpConstraints() {
