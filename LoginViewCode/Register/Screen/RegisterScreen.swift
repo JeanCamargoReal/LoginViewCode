@@ -7,12 +7,25 @@
 
 import UIKit
 
+protocol RegisterScreenProtocol: class {
+    func actionBackButton()
+    func actionRegisterButton()
+}
+
 class RegisterScreen: UIView {
+    
+    weak private var delegate: RegisterScreenProtocol?
+    
+    func delegate(delegate: RegisterScreenProtocol?) {
+        self.delegate = delegate
+    }
     
     lazy var backButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(UIImage(named: "back"), for: .normal)
+        button.addTarget(self, action: #selector(self.tappedBackButton), for: .touchUpInside)
+        
         return button
     }()
     
@@ -22,6 +35,7 @@ class RegisterScreen: UIView {
         image.image = UIImage(named: "usuario")
         image.contentMode = .scaleAspectFit
         image.tintColor = .white
+        
         return image
     }()
     
@@ -35,6 +49,7 @@ class RegisterScreen: UIView {
         tf.placeholder = "Digite seu e-mail"
         tf.font = UIFont.systemFont(ofSize: 14)
         tf.textColor = .darkGray
+        
         return tf
     }()
     
@@ -49,6 +64,7 @@ class RegisterScreen: UIView {
         tf.isSecureTextEntry = true
         tf.font = UIFont.systemFont(ofSize: 14)
         tf.textColor = .darkGray
+        
         return tf
     }()
     
@@ -60,6 +76,8 @@ class RegisterScreen: UIView {
         button.clipsToBounds = true
         button.layer.cornerRadius = 7.5
         button.backgroundColor = UIColor(red: 3/255, green: 58/255, blue: 51/255, alpha: 1.0)
+        button.addTarget(self, action: #selector(self.tappedRegisterButton), for: .touchUpInside)
+        
         return button
     }()
     
@@ -91,6 +109,14 @@ class RegisterScreen: UIView {
         self.passwordTextField.delegate = delegate
     }
     
+    @objc private func tappedBackButton() {
+        self.delegate?.actionBackButton()
+    }
+    
+    @objc private func tappedRegisterButton() {
+        self.delegate?.actionRegisterButton()
+    }
+    
     private func setUpConstraints() {
         NSLayoutConstraint.activate([
             self.imageAddUser.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -117,9 +143,6 @@ class RegisterScreen: UIView {
             self.registerButton.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
             self.registerButton.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
             self.registerButton.heightAnchor.constraint(equalTo: self.emailTextField.heightAnchor),
-            
-
-
         ])
     }
 }
