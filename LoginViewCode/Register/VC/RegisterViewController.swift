@@ -14,6 +14,7 @@ class RegisterViewController: UIViewController {
     override func loadView() {
         self.registerScreen = RegisterScreen()
         self.view = self.registerScreen
+        
     }
 
     override func viewDidLoad() {
@@ -25,6 +26,11 @@ class RegisterViewController: UIViewController {
 }
 
 extension RegisterViewController: UITextFieldDelegate {
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.registerScreen?.validaTextFields()
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
