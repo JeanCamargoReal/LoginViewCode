@@ -114,7 +114,7 @@ class LoginScreen: UIView {
         self.configLoginButtonConstraint()
         configRegisterButtonConstraint()
         
-        self.setUpConstraints()
+//        self.setUpConstraints()
         self.configButtonEnable(false)
     }
     
@@ -174,8 +174,8 @@ class LoginScreen: UIView {
     }
     
     
-    private func setUpConstraints() {
-        NSLayoutConstraint.activate([
+//    private func setUpConstraints() {
+//        NSLayoutConstraint.activate([
             
 //            self.loginLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
 //            self.loginLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
@@ -204,8 +204,8 @@ class LoginScreen: UIView {
 //            self.registerButton.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
 //            self.registerButton.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
 //            self.registerButton.heightAnchor.constraint(equalTo: self.emailTextField.heightAnchor)
-        ])
-    }
+//        ])
+//    }
     
     // ------------------------------------------------------------------
     // MARK: - SnapKit
