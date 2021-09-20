@@ -150,6 +150,14 @@ class RegisterScreen: UIView {
         }
     }
     
+    public func getEmail() -> String {
+        return self.emailTextField.text ?? ""
+    }
+    
+    public func getPassword() -> String {
+        return self.passwordTextField.text ?? ""
+    }
+    
 //    private func setUpConstraints() {
 //        NSLayoutConstraint.activate([
 //            self.imageAddUser.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
