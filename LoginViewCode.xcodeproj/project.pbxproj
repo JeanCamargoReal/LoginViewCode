@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C539B4A126FA1CC5002A8D77 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C539B4A026FA1CC5002A8D77 /* Alert.swift */; };
 		C548173126EA57B10065E880 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C548173026EA57B10065E880 /* RegisterViewController.swift */; };
 		C5B210A526F7C3A500777E5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5B210A426F7C3A500777E5D /* GoogleService-Info.plist */; };
 		C5BD002026EF81BD00B01779 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BD001F26EF81BD00B01779 /* RegisterScreen.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		17AE090B3CA5B4B367CC7C85 /* Pods-LoginViewCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode.release.xcconfig"; path = "Target Support Files/Pods-LoginViewCode/Pods-LoginViewCode.release.xcconfig"; sourceTree = "<group>"; };
 		608AA02FAA3A58979A214806 /* Pods-LoginViewCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode.debug.xcconfig"; path = "Target Support Files/Pods-LoginViewCode/Pods-LoginViewCode.debug.xcconfig"; sourceTree = "<group>"; };
+		C539B4A026FA1CC5002A8D77 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		C548173026EA57B10065E880 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C5B210A426F7C3A500777E5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C5BD001F26EF81BD00B01779 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 				17AE090B3CA5B4B367CC7C85 /* Pods-LoginViewCode.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C539B49F26FA1CAE002A8D77 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				C539B4A026FA1CC5002A8D77 /* Alert.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		C548172D26EA572C0065E880 /* Register */ = {
@@ -109,6 +119,7 @@
 		C5C0842C26DB29CC00936BA3 /* LoginViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				C539B49F26FA1CAE002A8D77 /* Alert */,
 				C548172D26EA572C0065E880 /* Register */,
 				C5C0844126DBFB9300936BA3 /* Login */,
 				C5C0842D26DB29CC00936BA3 /* AppDelegate.swift */,
@@ -264,6 +275,7 @@
 				C5C0844526DBFBEB00936BA3 /* LoginScreen.swift in Sources */,
 				C5C0842E26DB29CC00936BA3 /* AppDelegate.swift in Sources */,
 				C5C0843026DB29CC00936BA3 /* SceneDelegate.swift in Sources */,
+				C539B4A126FA1CC5002A8D77 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
