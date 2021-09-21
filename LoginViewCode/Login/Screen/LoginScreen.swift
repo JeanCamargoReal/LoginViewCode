@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol LoginScreenProtocol: class {
+protocol LoginScreenProtocol: AnyObject {
     func actionLoginButton()
     func actionRegisterButton()
 }
