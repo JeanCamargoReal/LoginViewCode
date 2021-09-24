@@ -10,6 +10,11 @@ import UIKit
 class HomeViewController: UIViewController {
     
     var homeScreen: HomeScreen?
+    var data: [DataUser] = [
+        DataUser(name: "Jean", nameImage: "menino1"),
+        DataUser(name: "Karina", nameImage: "menina1"),
+        DataUser(name: "Jolie", nameImage: "menina2"),
+    ]
     
     override func loadView() {
         self.homeScreen = HomeScreen()
@@ -26,17 +31,19 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return self.data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let color: [UIColor] = [.orange, .green, .red, .blue]
-        let cell: UITableViewCell = UITableViewCell()
+        let cell: UserDetailTableViewCell? = tableView.dequeueReusableCell(withIdentifier: UserDetailTableViewCell.identifier, for: indexPath) as? UserDetailTableViewCell
         
-        cell.backgroundColor = color[indexPath.row]
+        cell?.setUpCell(data: self.data[indexPath.row])
         
-        return cell
+        return cell ?? UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
     
 }
