@@ -34,20 +34,24 @@ class LoginViewController: UIViewController {
 }
 
 extension LoginViewController: LoginScreenProtocol {
+    
     func actionLoginButton() {
-        guard let login = self.loginScreen else { return }
+        let vc: HomeViewController = HomeViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
         
-        self.auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { usuario, error in
-            if error != nil {
-                self.alert?.getAlert(titulo: "Atenção", mensagem: "Dados incorretos, verifique e tente novamente.")
-            } else {
-                if usuario == nil {
-                    self.alert?.getAlert(titulo: "Atenção", mensagem: "Tivemos um problema inesperado, tente novamente mais tarde.")
-                } else {
-                    self.alert?.getAlert(titulo: "Parabéns", mensagem: "Usuário logado com sucesso.")
-                }
-            }
-        })
+//        guard let login = self.loginScreen else { return }
+//
+//        self.auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { usuario, error in
+//            if error != nil {
+//                self.alert?.getAlert(titulo: "Atenção", mensagem: "Dados incorretos, verifique e tente novamente.")
+//            } else {
+//                if usuario == nil {
+//                    self.alert?.getAlert(titulo: "Atenção", mensagem: "Tivemos um problema inesperado, tente novamente mais tarde.")
+//                } else {
+//                    self.alert?.getAlert(titulo: "Parabéns", mensagem: "Usuário logado com sucesso.")
+//                }
+//            }
+//        })
     }
     
     func actionRegisterButton() {
