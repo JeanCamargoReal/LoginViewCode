@@ -13,6 +13,7 @@
 		C52EF7BC26FE4BE200B53F6C /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52EF7BB26FE4BE200B53F6C /* DataUser.swift */; };
 		C539B4A126FA1CC5002A8D77 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C539B4A026FA1CC5002A8D77 /* Alert.swift */; };
 		C548173126EA57B10065E880 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C548173026EA57B10065E880 /* RegisterViewController.swift */; };
+		C55850E72702064000917EB9 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55850E62702064000917EB9 /* UserDetailView.swift */; };
 		C5B210A526F7C3A500777E5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5B210A426F7C3A500777E5D /* GoogleService-Info.plist */; };
 		C5BD002026EF81BD00B01779 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BD001F26EF81BD00B01779 /* RegisterScreen.swift */; };
 		C5C0842E26DB29CC00936BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C0842D26DB29CC00936BA3 /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 		C52EF7BB26FE4BE200B53F6C /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		C539B4A026FA1CC5002A8D77 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		C548173026EA57B10065E880 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C55850E62702064000917EB9 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		C5B210A426F7C3A500777E5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C5BD001F26EF81BD00B01779 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		C5C0842A26DB29CC00936BA3 /* LoginViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 		C52EF7B726FE0D7800B53F6C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				C55850E52702060600917EB9 /* CustomView */,
 				C52EF7B826FE0DC400B53F6C /* UserDetailTableViewCell.swift */,
 			);
 			path = Cell;
@@ -147,6 +150,14 @@
 				C5BD001F26EF81BD00B01779 /* RegisterScreen.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		C55850E52702060600917EB9 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				C55850E62702064000917EB9 /* UserDetailView.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		C5C0842126DB29CC00936BA3 = {
@@ -325,6 +336,7 @@
 				C5C0843226DB29CC00936BA3 /* LoginViewController.swift in Sources */,
 				C548173126EA57B10065E880 /* RegisterViewController.swift in Sources */,
 				C527955926FA65EE0090AC49 /* HomeViewController.swift in Sources */,
+				C55850E72702064000917EB9 /* UserDetailView.swift in Sources */,
 				C52EF7BC26FE4BE200B53F6C /* DataUser.swift in Sources */,
 				C5C0844526DBFBEB00936BA3 /* LoginScreen.swift in Sources */,
 				C52EF7B926FE0DC400B53F6C /* UserDetailTableViewCell.swift in Sources */,
