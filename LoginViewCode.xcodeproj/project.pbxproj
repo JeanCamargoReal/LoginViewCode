@@ -14,6 +14,8 @@
 		C539B4A126FA1CC5002A8D77 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C539B4A026FA1CC5002A8D77 /* Alert.swift */; };
 		C548173126EA57B10065E880 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C548173026EA57B10065E880 /* RegisterViewController.swift */; };
 		C55850E72702064000917EB9 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55850E62702064000917EB9 /* UserDetailView.swift */; };
+		C55850EB27024C0400917EB9 /* SportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55850EA27024C0400917EB9 /* SportTableViewCell.swift */; };
+		C55850EE270251CA00917EB9 /* SportTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55850ED270251CA00917EB9 /* SportTableViewCellScreen.swift */; };
 		C5B210A526F7C3A500777E5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5B210A426F7C3A500777E5D /* GoogleService-Info.plist */; };
 		C5BD002026EF81BD00B01779 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BD001F26EF81BD00B01779 /* RegisterScreen.swift */; };
 		C5C0842E26DB29CC00936BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C0842D26DB29CC00936BA3 /* AppDelegate.swift */; };
@@ -34,6 +36,8 @@
 		C539B4A026FA1CC5002A8D77 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		C548173026EA57B10065E880 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C55850E62702064000917EB9 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		C55850EA27024C0400917EB9 /* SportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCell.swift; sourceTree = "<group>"; };
+		C55850ED270251CA00917EB9 /* SportTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCellScreen.swift; sourceTree = "<group>"; };
 		C5B210A426F7C3A500777E5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C5BD001F26EF81BD00B01779 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		C5C0842A26DB29CC00936BA3 /* LoginViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,8 +109,8 @@
 		C52EF7B726FE0D7800B53F6C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C55850E52702060600917EB9 /* CustomView */,
-				C52EF7B826FE0DC400B53F6C /* UserDetailTableViewCell.swift */,
+				C55850E927024BD700917EB9 /* SportTableViewCell */,
+				C55850E827024B9400917EB9 /* UserDetailTableViewCell */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -156,6 +160,32 @@
 			isa = PBXGroup;
 			children = (
 				C55850E62702064000917EB9 /* UserDetailView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		C55850E827024B9400917EB9 /* UserDetailTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C55850E52702060600917EB9 /* CustomView */,
+				C52EF7B826FE0DC400B53F6C /* UserDetailTableViewCell.swift */,
+			);
+			path = UserDetailTableViewCell;
+			sourceTree = "<group>";
+		};
+		C55850E927024BD700917EB9 /* SportTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C55850EF270251D800917EB9 /* CustomView */,
+				C55850EA27024C0400917EB9 /* SportTableViewCell.swift */,
+			);
+			path = SportTableViewCell;
+			sourceTree = "<group>";
+		};
+		C55850EF270251D800917EB9 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				C55850ED270251CA00917EB9 /* SportTableViewCellScreen.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -338,6 +368,8 @@
 				C527955926FA65EE0090AC49 /* HomeViewController.swift in Sources */,
 				C55850E72702064000917EB9 /* UserDetailView.swift in Sources */,
 				C52EF7BC26FE4BE200B53F6C /* DataUser.swift in Sources */,
+				C55850EE270251CA00917EB9 /* SportTableViewCellScreen.swift in Sources */,
+				C55850EB27024C0400917EB9 /* SportTableViewCell.swift in Sources */,
 				C5C0844526DBFBEB00936BA3 /* LoginScreen.swift in Sources */,
 				C52EF7B926FE0DC400B53F6C /* UserDetailTableViewCell.swift in Sources */,
 				C527955B26FA669F0090AC49 /* HomeScreen.swift in Sources */,
