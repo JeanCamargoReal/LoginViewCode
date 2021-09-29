@@ -16,6 +16,8 @@
 		C55850E72702064000917EB9 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55850E62702064000917EB9 /* UserDetailView.swift */; };
 		C55850EB27024C0400917EB9 /* SportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55850EA27024C0400917EB9 /* SportTableViewCell.swift */; };
 		C55850EE270251CA00917EB9 /* SportTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55850ED270251CA00917EB9 /* SportTableViewCellScreen.swift */; };
+		C5A7300B2703A56300BFC12D /* SportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A7300A2703A56300BFC12D /* SportCollectionViewCell.swift */; };
+		C5A7300D2703A5B800BFC12D /* SportCollectionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A7300C2703A5B800BFC12D /* SportCollectionViewCellScreen.swift */; };
 		C5B210A526F7C3A500777E5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5B210A426F7C3A500777E5D /* GoogleService-Info.plist */; };
 		C5BD002026EF81BD00B01779 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BD001F26EF81BD00B01779 /* RegisterScreen.swift */; };
 		C5C0842E26DB29CC00936BA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C0842D26DB29CC00936BA3 /* AppDelegate.swift */; };
@@ -38,6 +40,8 @@
 		C55850E62702064000917EB9 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		C55850EA27024C0400917EB9 /* SportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCell.swift; sourceTree = "<group>"; };
 		C55850ED270251CA00917EB9 /* SportTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewCellScreen.swift; sourceTree = "<group>"; };
+		C5A7300A2703A56300BFC12D /* SportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCollectionViewCell.swift; sourceTree = "<group>"; };
+		C5A7300C2703A5B800BFC12D /* SportCollectionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCollectionViewCellScreen.swift; sourceTree = "<group>"; };
 		C5B210A426F7C3A500777E5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C5BD001F26EF81BD00B01779 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		C5C0842A26DB29CC00936BA3 /* LoginViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +180,7 @@
 		C55850E927024BD700917EB9 /* SportTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				C5A730092703A50300BFC12D /* CollectionViewCell */,
 				C55850EF270251D800917EB9 /* CustomView */,
 				C55850EA27024C0400917EB9 /* SportTableViewCell.swift */,
 			);
@@ -188,6 +193,23 @@
 				C55850ED270251CA00917EB9 /* SportTableViewCellScreen.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		C5A730092703A50300BFC12D /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C5A7300E2703A5C100BFC12D /* CollectionCustomView */,
+				C5A7300A2703A56300BFC12D /* SportCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		C5A7300E2703A5C100BFC12D /* CollectionCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				C5A7300C2703A5B800BFC12D /* SportCollectionViewCellScreen.swift */,
+			);
+			path = CollectionCustomView;
 			sourceTree = "<group>";
 		};
 		C5C0842126DB29CC00936BA3 = {
@@ -365,7 +387,9 @@
 				C5BD002026EF81BD00B01779 /* RegisterScreen.swift in Sources */,
 				C5C0843226DB29CC00936BA3 /* LoginViewController.swift in Sources */,
 				C548173126EA57B10065E880 /* RegisterViewController.swift in Sources */,
+				C5A7300B2703A56300BFC12D /* SportCollectionViewCell.swift in Sources */,
 				C527955926FA65EE0090AC49 /* HomeViewController.swift in Sources */,
+				C5A7300D2703A5B800BFC12D /* SportCollectionViewCellScreen.swift in Sources */,
 				C55850E72702064000917EB9 /* UserDetailView.swift in Sources */,
 				C52EF7BC26FE4BE200B53F6C /* DataUser.swift in Sources */,
 				C55850EE270251CA00917EB9 /* SportTableViewCellScreen.swift in Sources */,
